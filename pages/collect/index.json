@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tabbs":"../../components/Tabbs/Tabbs"
+  },
+  "navigationBarTitleText": "我的收藏"
+}

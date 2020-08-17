@@ -1,0 +1,7 @@
+<view class="page_search">
+  <input value="{{isValue}}" placeholder="请输入商品名称" class="search_text" bindinput="handleChange"/>
+  <button class="btn" hidden="{{isFours}}" bindtap="handleItem">取消</button>
+</view>
+<view class="search_wrap">
+  <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}"class="search_item" wx:for="{{goods}}" wx:key="goods_id">{{item.goods_name}}</navigator>
+</view>

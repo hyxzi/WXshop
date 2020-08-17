@@ -1,0 +1,10 @@
+<!--components/Tabbs/Tabbs.wxml-->
+<view class="tabbs">
+  <view class="tabbs_title">
+    <view class="title_item {{item.isActive?'active':''}}" 
+    wx:for="{{tabbs}}" wx:key="id" bindtap="itemClick" data-index="{{index}}">{{item.name}}</view>
+  </view>
+  <view class="tabbs_content">
+  <slot ></slot>
+  </view>
+</view>
